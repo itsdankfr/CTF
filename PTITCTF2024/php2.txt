@@ -1,0 +1,31 @@
+<?php
+define("F", readline("Flag: "));
+
+// Check if the flag length is 22
+if (strlen(constant("F")) !== 22) {
+    printf("Nope1");
+    exit;
+}
+
+// Check if the flag starts with "PTITCTF{"
+if (substr(constant("F"), 0, 8) !== "PTITCTF{") {
+    printf("Nope2");
+    exit;
+}
+
+// Check if the XOR of the first 8 and the next 8 characters matches a specific pattern
+if (strnatcmp(
+    " <" . chr(25) . chr(11) . "r'" . chr(25) . ":",
+    substr(constant("F"), 0, 8) ^ substr(constant("F"), 8, 8)
+) !== 0) {
+    printf("Nope3");
+    exit;
+}
+
+// Validate the MD5 hash of a specific substring of the flag against a constructed string
+if (strnatcmp("38be61c0ec8d112124ee50a4a118926d", md5(substr(constant("F"), 16, 5))) === 0) {
+    printf("yes");
+} else {
+    printf("Nope4");
+}
+?>
