@@ -24,4 +24,4 @@
 ```
 
 #### As we can see, these all are characters with ASCII numbers in the visible range.
-#### Now that i can tell the flag has length == 22, and it is sth like : `PTITCTF{phP_1s_Axxxxx}`, the xxxxx has the `MD5 HASH = 38be61c0ec8d112124ee50a4a118926d`
+#### Now that i can tell the flag has length == 22, and it is sth like : `PTITCTF{phP_1s_Axxxxx}`, the xxxxx has the `MD5 HASH = 38be61c0ec8d112124ee50a4a118926d` it's now time for some bruteforce
