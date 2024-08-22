@@ -1,15 +1,15 @@
 # REV5 Writeup by `whales`
 
-#### Start from the source file, got the overall look which contains so many xors in PHP.
-#### I didn't got any PHP IDE yet so i copied the source into some online PHP compiler, and it looked sth like this: 
+Start from the source file, got the overall look which contains so many xors in PHP.
+I didn't got any PHP IDE yet so i copied the source into some online PHP compiler, and it looked sth like this: 
 ![image](https://github.com/user-attachments/assets/310f9222-512e-4497-9ab9-f68b8f9d3b24)
-#### Ran it down, got the output window request like `"FLAG"` so this must be the type to reverse the source code to find out the flag
-#### From that moment i can understand what this PHP does, maybe it xor a lot of characters and the result must be sth readable
-#### Thus i wrote a php program to print out what the character or its ascii number is: 
+Ran it down, got the output window request like `"FLAG"` so this must be the type to reverse the source code to find out the flag
+From that moment i can understand what this PHP does, maybe it xor a lot of characters and the result must be sth readable
+Thus i wrote a php program to print out what the character or its ascii number is: 
 ![image](https://github.com/user-attachments/assets/d8630d6a-a0b0-4ae0-aab0-6dcf5be78980)
-#### Then for about 2 or 3 hours straight, i just copy the xor into the function to print out the character then go into VScode, `ctrl F` to find then `replace all` the same xor in other positions
+Then for about 2 or 3 hours straight, i just copy the xor into the function to print out the character then go into VScode, `ctrl F` to find then `replace all` the same xor in other positions
 ![image](https://github.com/user-attachments/assets/2e56a4bc-2b74-41ea-9da2-9d46ce4a5600)
-#### After a while struglle with the xors, i have nearly done with finding out character ( here are the codes i sent to my team when i just made some progress )
+After a while struglle with the xors, i have nearly done with finding out character ( here are the codes i sent to my team when i just made some progress )
 ```
 <?php
 ((''.'8'^'\\').(''.'8'^']').(''.'8'^'^').(''.'7'^'^').(''.'0'^'^').(''.'8'^']'))((''.'8'^'~'),((''.'2'^'@').(''.'8'^']').('('^'I').(''.'8'^'\\').(''.'0'^'\\').(''.'7'^'^').(''.'0'^'^').(''.'8'^']'))((''.'8'^'~').(''.'0'^'\\').('('^'I').(''.'8'^'_').':'.' ')).(((''.'3'^'@').(''.'4'^'@').(''.'2'^'@').(''.'8'^'[').(''.'0'^']').(''.'0'^'@'))(((''.'3'^'@').(''.'4'^'@').(''.'2'^'@').(''.'0'^'\\').(''.'8'^']').(''.'0'^'^'))(((''.'8'^'[').(''.'0'^'_').(''.'0'^'^').(''.'3'^'@').(''.'4'^'@').('('^'I').(''.'0'^'^').(''.'4'^'@'))((''.'8'^'~'))),(''.'2').(''.'2'))?((''.'0'^'@').(''.'2'^'@').(''.'7'^'^').(''.'0'^'^').(''.'4'^'@').(''.'8'^'^'))((''.'0'^'~').(''.'0'^'_').(''.'0'^'@').(''.'8'^']')):(((''.'7'^'^').(''.'0'^'^').('_').('('^'I').(''.'2'^'@').(''.'2'^'@').('('^'I').(''.'9'^'@'))(((''.'3'^'@').(''.('strlen')('^%$@&')^'@').(''.'9'^'[').(''.'3'^'@').(''.'4'^'@').(''.'2'^'@'))(((''.'8'^'[').(''.'0'^'_').(''.'0'^'^').(''.'3'^'@').(''.'4'^'@').('('^'I').(''.'0'^'^').(''.'4'^'@'))((''.'8'^'~')),(''.'0'),(''.'8')),[(''.'0'^'`').(''.'4'^'`').(''.'7'^'~').(''.'4'^'`').(''.'8'^'{').(''.'4'^'`').(''.'8'^'~').('{'),])?(((''.'3'^'@').(''.'4'^'@').(''.'2'^'@').(''.'0'^'^').('('^'I').(''.'4'^'@').(''.'8'^'[').(''.'0'^']').(''.'0'^'@'))(('['^'{').('['^'g').('['^'B').('['^'P').('['^')').('['^'|').('['^'B').('['^'a'),((''.'3'^'@').(''.('strlen')('^%$@&')^'@').(''.'9'^'[').(''.'3'^'@').(''.'4'^'@').(''.'2'^'@'))(((''.'8'^'[').(''.'0'^'_').(''.'0'^'^').(''.'3'^'@').(''.'4'^'@').('('^'I').(''.'0'^'^').(''.'4'^'@'))((''.'8'^'~')),(''.'0'),(''.'8'))^((''.'3'^'@').(''.('strlen')('^%$@&')^'@').(''.'9'^'[').(''.'3'^'@').(''.'4'^'@').(''.'2'^'@'))(((''.'8'^'[').(''.'0'^'_').(''.'0'^'^').(''.'3'^'@').(''.'4'^'@').('('^'I').(''.'0'^'^').(''.'4'^'@'))((''.'8'^'~')),(''.'8'),(''.'8')))?((''.'0'^'@').(''.'2'^'@').(''.'7'^'^').(''.'0'^'^').(''.'4'^'@').(''.'8'^'^'))((''.'0'^'~').(''.'0'^'_').(''.'0'^'@').(''.'8'^']')):(((''.'3'^'@').(''.'4'^'@').(''.'2'^'@').(''.'0'^'^').('('^'I').(''.'4'^'@').(''.'8'^'[').(''.'0'^']').(''.'0'^'@'))((''.'3').(''.'8').(''.'9'^'[').(''.'8'^']').(''.('strlen')('+_)(*)')).(''.('strlen')('^')).(''.'8'^'[').(''.'0').(''.'8'^']').(''.'8'^'[').(''.'8').(''.'8'^'\\').(''.('strlen')('^')).(''.('strlen')('^')).(''.'2').(''.('strlen')('^')).(''.'2').(''.'4').(''.'8'^']').(''.'8'^']').(''.('strlen')('^%$@&')).(''.'0').('('^'I').(''.'4').('('^'I').(''.('strlen')('^')).(''.('strlen')('^')).(''.'8').(''.'9').(''.'2').(''.('strlen')('+_)(*)')).(''.'8'^'\\'),((''.'0'^']').(''.'8'^'\\').(''.('strlen')('^%$@&')))(((''.'3'^'@').(''.('strlen')('^%$@&')^'@').(''.'9'^'[').(''.'3'^'@').(''.'4'^'@').(''.'2'^'@'))(((''.'8'^'[').(''.'0'^'_').(''.'0'^'^').(''.'3'^'@').(''.'4'^'@').('('^'I').(''.'0'^'^').(''.'4'^'@'))((''.'8'^'~')),(''.('strlen')('^')).(''.('strlen')('+_)(*)')),(''.('strlen')('^%$@&')))))?((''.'0'^'@').(''.'2'^'@').(''.'7'^'^').(''.'0'^'^').(''.'4'^'@').(''.'8'^'^'))((''.'0'^'~').(''.'0'^'_').(''.'0'^'@').(''.'8'^']')):((''.'0'^'@').(''.'2'^'@').(''.'7'^'^').(''.'0'^'^').(''.'4'^'@').(''.'8'^'^'))((''.'9'^'@').(''.'8'^']').(''.'3'^'@')))):((''.'0'^'@').(''.'2'^'@').(''.'7'^'^').(''.'0'^'^').(''.'4'^'@').(''.'8'^'^'))((''.'0'^'~').(''.'0'^'_').(''.'0'^'@').(''.'8'^']'))))
@@ -23,7 +23,7 @@
 
 ```
 
-#### After analyzing the PHP code and replacing the XOR operations with readable char types, the final PHP code is as follows:
+After analyzing the PHP code and replacing the XOR operations with readable char types, the final PHP code is as follows:
 
 ```
 <?php
@@ -59,13 +59,13 @@ if (strnatcmp("38be61c0ec8d112124ee50a4a118926d", md5(substr(constant("F"), 16, 
 ?>
 ```
 
-### By analyzing this code, we observe the following:
+By analyzing this code, we observe the following:
 
-#### - The flag must be 22 characters long. Therefore, it will have the form PTITCTF{xxxxxxxxxxxxx}.
-#### - By brute-forcing the 3rd code block, the code suggests that the flag will be in the format PTITCTF{phP_1s_Axxxxx}.
-#### - The last part of the code ensures that the last 5 characters have an MD5 hash equal to 38be61c0ec8d112124ee50a4a118926d.
+- The flag must be 22 characters long. Therefore, it will have the form PTITCTF{xxxxxxxxxxxxx}.
+- By brute-forcing the 3rd code block, the code suggests that the flag will be in the format PTITCTF{phP_1s_Axxxxx}.
+- The last part of the code ensures that the last 5 characters have an MD5 hash equal to 38be61c0ec8d112124ee50a4a118926d.
 
-#### So, all we need to do is brute-force the flag to find the correct one. Below is the brute-force code written in PHP using 5 nested for loops:
+So, all we need to do is brute-force the flag to find the correct one. Below is the brute-force code written in PHP using 5 nested for loops:
 
 ```
 <?php
