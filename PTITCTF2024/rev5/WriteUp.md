@@ -5,6 +5,7 @@ I didn't got any PHP IDE yet so i copied the source into some online PHP compile
 ![image](https://github.com/user-attachments/assets/310f9222-512e-4497-9ab9-f68b8f9d3b24)
 Ran it down, got the output window request like `"FLAG"` so this must be the type to reverse the source code to find out the flag
 From that moment i can understand what this PHP does, maybe it xor a lot of characters and the result must be sth readable
+
 Thus i wrote a php program to print out what the character or its ascii number is: 
 ![image](https://github.com/user-attachments/assets/d8630d6a-a0b0-4ae0-aab0-6dcf5be78980)
 Then for about 2 or 3 hours straight, i just copy the xor into the function to print out the character then go into VScode, `ctrl F` to find then `replace all` the same xor in other positions
