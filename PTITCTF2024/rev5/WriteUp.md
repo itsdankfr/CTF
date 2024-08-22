@@ -102,4 +102,4 @@ So, all we need to do is brute-force the flag to find the correct one. Below is 
 ?>
 ```
 
-After approximately 10 minutes of brute-forcing, we get the flag: ```PTITCTF{phP_1s_A_hehe}``` 🎉
+After approximately 10 minutes of brute-forcing, we get the flag: ```PTITCTF{redacted}``` 🎉
