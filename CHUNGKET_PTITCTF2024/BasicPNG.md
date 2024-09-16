@@ -14,7 +14,7 @@ Opened the file in IDA64, I got the overall view. But i still couldn't understan
 
 
 It told me that i needed to put 2 input which is ```v4, v5[0]``` correctly to bypass some conditions then i would get the flag.
-Because it's a competition ( i meaned i don't want to waste any time 'cause we still couldn't solve any challenge yet ), i asked chatgpt about what should i put into the exe file, it give me some hints like this
+Because it's a competition ( i meaned i don't want to waste any time 'cause we still couldn't solve any challenge yet ), i asked chatgpt about what should i put into the exe file, it gave me some hints like this
 
 
 ![Screenshot 2024-09-15 182932](https://github.com/user-attachments/assets/9ae66fe6-a98e-4daf-96d7-e48151da8541)
