@@ -50,8 +50,6 @@ Now come to the reverse engineering part:
 ![image](https://github.com/user-attachments/assets/64813f62-f869-4bc9-b418-0aedb94e0aa5)
 
 
-After the first 1h without any idea what to do in Crypto 1, Long told me he found the file which we have to reverse to get the flag. So from then on it'd be my job with the PE32+
-
 Opened the file in IDA64, I got the overall view. But i still couldn't understand the code's flow and how it worked clearly, so i copied and pasted it into chatgpt requested some help:
 
 
