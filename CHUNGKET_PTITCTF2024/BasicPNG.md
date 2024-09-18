@@ -1,7 +1,5 @@
 # BasicPNG ( Forensics 3 ) writeup by `whales`
 
-## Forensics part `( by Long )`
-
 The challenge provided us a corrupted file, with the byte structure resembling a PE32+ file.
 
 ![image](https://github.com/user-attachments/assets/b8648a99-009c-47dc-a431-bd6397941e5e)
@@ -51,8 +49,6 @@ After running this script, I got the original file.
 Now come to the reverse engineering part:
 ![image](https://github.com/user-attachments/assets/64813f62-f869-4bc9-b418-0aedb94e0aa5)
 
-
-## RE part `( by CDA )`
 
 After the first 1h without any idea what to do in Crypto 1, Long told me he found the file which we have to reverse to get the flag. So from then on it'd be my job with the PE32+
 
